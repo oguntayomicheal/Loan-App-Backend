@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
-  devise_for :customers
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  namespace :api do
+    namespace :v1 do
+      # devise_for :customers, controllers: {
+      #   registrations: 'api/v1/customers/registrations',
+      #   # sessions: 'api/v1/customers/sessions'
+      # }
+      devise_for :customers, controllers: {
+        registrations: 'api/v1/customers/registrations',
+        sessions: 'api/v1/sessions'
+      }
+    end
+  end
 end
