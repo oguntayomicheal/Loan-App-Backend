@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: ruby_on_rails_template_development
+  database: loan_app_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: ruby_on_rails_template
+  #username: loan_app
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: ruby_on_rails_template_test
+  database: loan_app_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: ruby_on_rails_template_production
-  username: ruby_on_rails_template
-  password: <%= ENV["RUBY_ON_RAILS_TEMPLATE_DATABASE_PASSWORD"] %>
+  database: loan_app_production
+  username: loan_app
+  password: <%= ENV["loan_app_DATABASE_PASSWORD"] %>
