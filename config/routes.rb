@@ -6,6 +6,20 @@ Rails.application.routes.draw do
         registrations: 'api/v1/customers/registrations',
         sessions: 'api/v1/customers/sessions'
       }
+
+      namespace :staffs do 
+        get "/login", to: "sessions#login"
+        post 'login', to: 'sessions#login'
+
+      end
+
+
+      # namespace :staff do
+      #   post 'login', to: 'sessions#login'
+      #   get 'login', to: 'sessions#login'
+      #   delete 'logout', to: 'sessions#destroy'
+      # end
+
     end
   end
 end
