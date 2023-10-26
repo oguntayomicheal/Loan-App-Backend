@@ -8,9 +8,16 @@ Rails.application.routes.draw do
       }
 
 
+      namespace :customers do
+        resources :loan_applications, only: [:create]
+      end
+
+   
 
 
-      
+
+
+
       namespace :staffs do 
         get "/login", to: "sessions#login"
         post 'login', to: 'sessions#login'
