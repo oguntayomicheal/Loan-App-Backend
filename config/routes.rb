@@ -15,9 +15,6 @@ Rails.application.routes.draw do
    
 
 
-
-
-
       namespace :staffs do 
         get "/login", to: "sessions#login"
         post 'login', to: 'sessions#login'
