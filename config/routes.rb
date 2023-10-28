@@ -19,6 +19,7 @@ Rails.application.routes.draw do
         get "/login", to: "sessions#login"
         post 'login', to: 'sessions#login'
 
+        resources :loan_applications, only: [:index]
       end
 
 
