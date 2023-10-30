@@ -8,7 +8,7 @@ Rails.application.routes.draw do
       }
 
       namespace :customers do
-        resources :loan_applications, only: [:create, :index]
+        resources :loan_applications, only: [:create, :show]
         
         get ':customer_id/loan_applications', to: 'loan_applications#index'
       end

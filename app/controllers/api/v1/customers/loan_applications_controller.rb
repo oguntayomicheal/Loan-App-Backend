@@ -22,6 +22,11 @@ class Api::V1::Customers::LoanApplicationsController < ApplicationController
     render json: loan_applications
   end
 
+  def show
+    loan_application = LoanApplication.find(params[:id])
+    render json: loan_application
+  end
+
   private
 
   def loan_application_params
