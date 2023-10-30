@@ -22,6 +22,7 @@ class Api::V1::Customers::LoanApplicationsController < ApplicationController
   end
 
   def loan_application_params
-    params.require(:loanDetails).permit(:customer_name, :customer_id, :loan_amount, :purpose, :repayment_preferences,  :status, :details, :repayment_schedule, :amount_to_pay)
+    params.require(:loanDetails).permit(:customer_name, :customer_id, :loan_amount, :purpose, :repayment_preferences,
+                                        :status, :details, :repayment_schedule, :amount_to_pay)
   end
 end
