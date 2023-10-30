@@ -8,7 +8,9 @@ Rails.application.routes.draw do
       }
 
       namespace :customers do
-        resources :loan_applications, only: [:create]
+        resources :loan_applications, only: [:create, :index]
+        
+        get ':customer_id/loan_applications', to: 'loan_applications#index'
       end
 
       namespace :staffs do 

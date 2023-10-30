@@ -1,11 +1,12 @@
 class Api::V1::Customers::LoanApplicationsController < ApplicationController
   # Skip CSRF protection for JSON requests
   skip_before_action :verify_authenticity_token
-
-  before_action :set_customer
+ 
 
   # POST /api/v1/customers/:customer_id/loan_applications
   def create
+    @customer = Customer.find(loan_application_params[:customer_id])
+  
     @loan_application = @customer.loan_applications.new(loan_application_params)
 
     if @loan_application.save
@@ -15,11 +16,13 @@ class Api::V1::Customers::LoanApplicationsController < ApplicationController
     end
   end
 
-  private
-
-  def set_customer
-    @customer = Customer.find(loan_application_params[:customer_id])
+  def index
+    customer = Customer.find(params[:customer_id])
+    loan_applications = customer.loan_applications
+    render json: loan_applications
   end
+
+  private
 
   def loan_application_params
     params.require(:loanDetails).permit(:customer_name, :customer_id, :loan_amount, :purpose, :repayment_preferences,
