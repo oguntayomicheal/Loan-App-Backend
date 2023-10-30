@@ -18,7 +18,7 @@ Rails.application.routes.draw do
       namespace :staffs do 
         post 'login', to: 'sessions#login'
 
-        resources :loan_applications, only: [:index]
+        resources :loan_applications, only: [:index, :show]
       end
 
 
