@@ -22,6 +22,8 @@ class Api::V1::Staffs::LoanApplicationsController < ApplicationController
 
     if @loan_application.update(loan_application_review_params)
       render json: @loan_application, status: :ok
+    else
+      render json: { error: 'Loan application not Updated' }, status: :not_updated
     end
   end
 
