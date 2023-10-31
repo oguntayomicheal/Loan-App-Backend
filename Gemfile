@@ -72,5 +72,3 @@ end
 
 gem 'devise'
 gem 'rack-cors'
-gem 'prawn'
-

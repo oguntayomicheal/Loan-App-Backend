@@ -1,12 +1,11 @@
 class Api::V1::Customers::LoanApplicationsController < ApplicationController
   # Skip CSRF protection for JSON requests
   skip_before_action :verify_authenticity_token
- 
 
   # POST /api/v1/customers/:customer_id/loan_applications
   def create
     @customer = Customer.find(loan_application_params[:customer_id])
-  
+
     @loan_application = @customer.loan_applications.new(loan_application_params)
 
     if @loan_application.save
