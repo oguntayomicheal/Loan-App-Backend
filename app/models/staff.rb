@@ -7,7 +7,6 @@ class Staff < ApplicationRecord
   # validates :unique_id, presence: true, uniqueness: true
 
   validates :staff_id, presence: true, uniqueness: true
-  
 
   # Other attributes or methods specific to the Staff model can be defined here
 end

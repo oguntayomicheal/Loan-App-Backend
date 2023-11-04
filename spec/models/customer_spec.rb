@@ -6,7 +6,6 @@ RSpec.describe Customer, type: :model do
       email: 'test@example.com',
       password: 'password'
     )
-   
   end
 
   before { subject.save }
@@ -22,11 +21,5 @@ RSpec.describe Customer, type: :model do
       assoc = Customer.reflect_on_association(:loan_applications)
       expect(assoc.macro).to eq :has_many
     end
-
-
   end
-
-
-
-
 end

@@ -1,15 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe LoanApplication, type: :model do
- 
   before(:all) do
-    @customer =  Customer.create!(
+    @customer = Customer.create!(
       email: 'test1@example.com',
       password: 'password'
     )
     @loan_applications = LoanApplication.create!(customer: @customer)
   end
-
 
   describe 'validations' do
     it 'should be valid' do
