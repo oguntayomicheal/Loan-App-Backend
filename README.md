@@ -24,27 +24,47 @@
   - [🙏Acknowledgments ](#acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 [rails template] <a name="about-project"></a>
+# 📖 Loan Application Backend Repository <a name="about-project"></a>
 
-**[rails template]** is a Ruby on Rails template repo to quickly get started on a project or take home assignments
+> This repository houses the backend code for the Loan Application web application. It's developed in Ruby on Rails and handles database management, user authentication, and serving data to the frontend. The README provides details on setting up the backend, running migrations, and contributing to the project's development. 
 
-##### [Link to the front-end repo](https://github.com/t)
+
+##### [Link to the front-end repo](https://github.com/oguntayomicheal/Loan-App-Front-end)
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Ruby on Rails</summary>
+  <summary>Back-end Server</summary>
   <ul>
-    <li><a>https://rubyonrails.org/</a></li>
+    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
-- **[ ]**
+##### **Loan Officer (Staff)**
+- Permit Staff Login with unique ID
+- Renders all Loan applications for Staff dashboard
+- Renders each Loan applications 
+- Permit Update of loan application for staff alone
 
+##### **Customer**
+- Permit customer account registration 
+- Permit Login to an existing customer account
+- Permit creating of new loan application 
+- Renders all applied loans to customer 
+- Renders each loan applicaitons with its status and details
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -63,8 +83,8 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/
-  cd ....
+  git clone git@github.com:oguntayomicheal/Loan-App-Backend.git
+  cd Loan-App-Backend
 ```
 
 ### Install
@@ -86,16 +106,8 @@ To run the project, execute the following command:
 ```sh
   rails db:create
   rails db:migrate
-  rails db:seed
-  rails server -p 4000
+  rails server -p 3100
 ```
-
-To view api documentation on the project, execute the following command when server is running:
-
-```sh
-  http://localhost:4000/api-docs
-```
-
 ### Run tests
 
 To run tests, run the following command:
@@ -104,7 +116,7 @@ To run tests, run the following command:
   rspec spec
 ```
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Micheal Oguntayo**
 
@@ -114,14 +126,13 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [] **[ ]**
-- [] **[  ]**
+- **Allow customer to delete rejected loan applications**
 
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/s).
+Feel free to check the [issues page](https://github.com/oguntayomicheal/Loan-App-Backend/issues).
 
 
 ## ⭐ Show your support <a name="support"></a>
