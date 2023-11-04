@@ -2,8 +2,7 @@
 <a name="readme-top"></a>
 
 # 📗 Table of Contents
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 \[# 📖 Loan Application Backend Repository\] ](#-Loan_Application_Backend_Repository)
+- [📖 Loan Application Backend Repository](#-about-project)
   - [Link to the front-end repo](#link-to-the-front-end-repo)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
