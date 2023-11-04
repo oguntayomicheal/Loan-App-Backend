@@ -1,12 +1,9 @@
-# rails template
 
 <a name="readme-top"></a>
 
 # 📗 Table of Contents
-
-- [Doctor\_appointment\_reservation\_back\_end](#doctor_appointment_reservation_back_end)
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Appointment\_booker\_back\_end\] ](#-appointment_booker_back_end-)
+- [📖 \[# 📖 Loan Application Backend Repository\] ](#-Loan_Application_Backend_Repository)
   - [Link to the front-end repo](#link-to-the-front-end-repo)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
