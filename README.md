@@ -27,6 +27,9 @@
 
 ##### [Link to the front-end repo](https://github.com/oguntayomicheal/Loan-App-Front-end)
 
+## Database Entity Relationship Diagram
+![Loan_app_database_diagram](./Loan_App_Entity_Relationship_Diagram.png)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -44,6 +47,8 @@
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Key Features <a name="key-features"></a>
 
