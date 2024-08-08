@@ -9,7 +9,7 @@ class Api::V1::Customers::SessionsController < Devise::SessionsController
     if user&.valid_password?(session_params[:password])
       render json: { message: 'Login successful.', id: user.id, name: user.name }
     else
-      render json: { message: 'Invalid email or password.' }, status: :unprocessable_entity
+      render json: { message: 'Invalid email or password...' }, status: :unprocessable_entity
     end
   end
 
